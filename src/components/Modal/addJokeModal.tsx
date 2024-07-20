@@ -42,6 +42,7 @@ export default function AddModal({ onJokeAdded }: AddModalProps) {
 			}
 		} catch (err) {
 			setError("Failed to add joke. Please try again.");
+			console.log(error);
 		}
 	};
 	if (modal) {

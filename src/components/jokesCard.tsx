@@ -9,7 +9,7 @@ interface Joke {
 
 function JokesCard() {
 	const [jokes, setJokes] = useState<Joke[]>([]);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState<string | null>(null);
 	const [currentJoke, setCurrentJoke] = useState<Joke | null>(null);
 	useEffect(() => {
 		fetchJokes();
@@ -48,7 +48,8 @@ function JokesCard() {
 				setLastJoke(response.data);
 			}
 		} catch (err) {
-			setError(err);
+			setError("Error in get");
+			console.log(error);
 		}
 	};
 
