@@ -1,0 +1,57 @@
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	background: black;
+	color: white;
+}
+
+.modal {
+	background-color: white;
+	margin: auto;
+	width: 80%;
+	max-width: 80%;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	color: slategray;
+}
+
+.joke-text {
+	font-size: 1.5em;
+	word-wrap: break-word;
+	word-break: break-word;
+	white-space: normal;
+}
+
+button {
+	background-color: slategray;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	height: 30px;
+	margin: 10px;
+	padding: 5px;
+	font-family: "raleway", sans-serif;
+}
+
+button:hover {
+	background-color: darkslategray;
+}
+
+button:active {
+	background-color: lightslategray;
+	box-shadow: 0 2px #666;
+	transform: translateY(2px);
+}
+
+#author {
+	text-align: right;
+	margin-top: 10px;
+}
