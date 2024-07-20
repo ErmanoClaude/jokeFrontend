@@ -28,7 +28,7 @@ export default function AddModal({ onJokeAdded }: AddModalProps) {
 		}
 
 		try {
-			const response = await axios.post("http://localhost:8000/add/", {
+			const response = await axios.post("http://18.216.236.149:8000/add/", {
 				joke,
 				author,
 			});

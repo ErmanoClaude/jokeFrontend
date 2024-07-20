@@ -40,7 +40,7 @@ function JokesCard() {
 	// fetch jokes from api
 	const fetchJokes = async () => {
 		try {
-			const response = await axios.get("http://localhost:8000");
+			const response = await axios.get("http://18.216.236.149:8000/");
 
 			setJokes(response.data);
 
